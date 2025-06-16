@@ -1,0 +1,17 @@
+{
+    "manufacturer": "sadekbaroudi",
+    "keyboard_name": "ximi",
+    "url": "https://fingerpunch.xyz/product/ximi-v2/",
+    "maintainer": "Sadek Baroudi <sadekbaroudi@gmail.com>",
+    "usb": {
+        "vid": "0xFEFE",
+        "pid": "0xB171",
+        "device_version": "2.0.0"
+    },
+    "variants": [
+        {
+            "name": "v2",
+            "keyboard_folder": "fingerpunch/ximi/v2"
+        }
+    ]
+}
