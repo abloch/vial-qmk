@@ -17,7 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "keyboards/fingerpunch/src/config_pre.h"
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 
@@ -35,8 +34,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPI_MOSI_PIN GP23
 #define SPI_MISO_PIN GP20
 
-#define ENCODERS_PAD_A { GP7 }
-#define ENCODERS_PAD_B { GP8 }
 
 // Got help from https://www.eisbahn.jp/yoichiro/2022/08/luankey_pico_qmk_firmware.html
 #define MASTER_LEFT
@@ -78,7 +75,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 130
     #define RGB_MATRIX_STARTUP_HUE 35
     #define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
-    #define RGB_DISABLE_WHEN_USB_SUSPENDED
+    #define RGB_MATRIX_SLEEP
     #define RGB_MATRIX_KEYPRESSES
     #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
     #define RGB_MATRIX_KEYREACTIVE_ENABLED

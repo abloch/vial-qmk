@@ -2,6 +2,9 @@
 
 enum custom_keycodes {
     NEXTSEN = QK_KB,
+    FP_POINT_DPI_UP,
+    FP_POINT_DPI_RESET,
+    FP_POINT_DPI_DN,
     NEW_SAFE_RANGE
 };
 

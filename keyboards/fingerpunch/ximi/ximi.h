@@ -15,12 +15,3 @@
  */
 #pragma once
 
-#include "quantum.h"
-
-#if defined(KEYBOARD_fingerpunch_ximi_v1)
-#    include "v1.h"
-#elif defined(KEYBOARD_fingerpunch_ximi_v2)
-#    include "v2.h"
-#endif
-
-#include "keyboards/fingerpunch/src/fp.h"

@@ -18,7 +18,7 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 # Either do RGBLIGHT_ENABLE or RGB_MATRIX_ENABLE and RGB_MATRIX_DRIVER
 RGBLIGHT_ENABLE ?= no
 RGB_MATRIX_ENABLE ?= no      # not supported yet, but will add
-RGB_MATRIX_DRIVER = WS2812
+RGB_MATRIX_DRIVER = ws2812
 WS2812_DRIVER = vendor
 
 MIDI_ENABLE = no            # MIDI support
@@ -125,6 +125,9 @@ endif
 
 # include here so that if VIK enables the PMW3360, the OPT_DEFS get set appropriately for ximi
 include keyboards/fingerpunch/src/rules.mk
+
+# Ensure proper ChibiOS libraries are included
+USE_CHIBIOS_CONTRIB = yes
 
 ifeq ($(strip $(CIRQUE_ENABLE)), yes)
    POINTING_DEVICE_ENABLE := yes
