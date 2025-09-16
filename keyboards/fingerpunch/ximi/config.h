@@ -162,13 +162,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define CIRQUE_PINNACLE_ADDR 0x2A
     // This is for SPI only, which is the default
     #define CIRQUE_PINNACLE_SPI_CS_PIN GP9
-    
+
     // Uncomment 2 lines below to switch to relative mode and enable right click
     // Note that tap to click doesn't work on the slave side unless you enable relative mode
     // #define CIRQUE_PINNACLE_POSITION_MODE CIRQUE_PINNACLE_RELATIVE_MODE
     // #define CIRQUE_PINNACLE_SECONDARY_TAP_ENABLE
     #define CIRQUE_PINNACLE_TAP_ENABLE
     #define POINTING_DEVICE_TASK_THROTTLE_MS 5
+    #define CIRQUE_PINNACLE_POSITION_MODE CIRQUE_PINNACLE_ABSOLUTE_MODE
+    #define POINTING_DEVICE_GESTURES_CURSOR_GLIDE_ENABLE
+    #define POINTING_DEVICE_GESTURES_CURSOR_GLIDE_ENABLE
+    #define POINTING_DEVICE_GESTURES_SCROLL_ENABLE
 #endif
 
 #ifdef FP_TRACKBALL_ENABLE

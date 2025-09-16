@@ -1,0 +1,3 @@
+#!/bin/bash
+./flash_left
+./flash_right

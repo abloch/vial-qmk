@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /Users/akiva/personal-projects/vial-qmk/keyboards/fingerpunch/ximi/v2/keymaps/vial
+$EDITOR .
