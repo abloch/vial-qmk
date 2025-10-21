@@ -1,0 +1,150 @@
+// Copyright 2025 QMK
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+/*******************************************************************************
+  88888888888 888      d8b                .d888 d8b 888               d8b
+      888     888      Y8P               d88P"  Y8P 888               Y8P
+      888     888                        888        888
+      888     88888b.  888 .d8888b       888888 888 888  .d88b.       888 .d8888b
+      888     888 "88b 888 88K           888    888 888 d8P  Y8b      888 88K
+      888     888  888 888 "Y8888b.      888    888 888 88888888      888 "Y8888b.
+      888     888  888 888      X88      888    888 888 Y8b.          888      X88
+      888     888  888 888  88888P'      888    888 888  "Y8888       888  88888P'
+                                                        888                 888
+                                                        888                 888
+                                                        888                 888
+     .d88b.   .d88b.  88888b.   .d88b.  888d888 8888b.  888888 .d88b.   .d88888
+    d88P"88b d8P  Y8b 888 "88b d8P  Y8b 888P"      "88b 888   d8P  Y8b d88" 888
+    888  888 88888888 888  888 88888888 888    .d888888 888   88888888 888  888
+    Y88b 888 Y8b.     888  888 Y8b.     888    888  888 Y88b. Y8b.     Y88b 888
+     "Y88888  "Y8888  888  888  "Y8888  888    "Y888888  "Y888 "Y8888   "Y88888
+         888
+    Y8b d88P
+     "Y88P"
+*******************************************************************************/
+
+#pragma once
+
+#ifndef AUDIO_VOICES
+#    define AUDIO_VOICES
+#endif // AUDIO_VOICES
+
+#ifndef LOCKING_SUPPORT_ENABLE
+#    define LOCKING_SUPPORT_ENABLE
+#endif // LOCKING_SUPPORT_ENABLE
+
+#ifndef LOCKING_RESYNC_ENABLE
+#    define LOCKING_RESYNC_ENABLE
+#endif // LOCKING_RESYNC_ENABLE
+
+#ifndef DEBOUNCE
+#    define DEBOUNCE 5
+#endif // DEBOUNCE
+
+#ifndef DIODE_DIRECTION
+#    define DIODE_DIRECTION COL2ROW
+#endif // DIODE_DIRECTION
+
+#ifndef RGB_MATRIX_MAXIMUM_BRIGHTNESS
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 130
+#endif // RGB_MATRIX_MAXIMUM_BRIGHTNESS
+
+#ifndef RGB_MATRIX_SPLIT
+#    define RGB_MATRIX_SPLIT { 21, 21 }
+#endif // RGB_MATRIX_SPLIT
+
+#ifndef RGBLED_SPLIT
+#    define RGBLED_SPLIT { 21, 21 }
+#endif // RGBLED_SPLIT
+
+#ifndef RGBLIGHT_HUE_STEP
+#    define RGBLIGHT_HUE_STEP 16
+#endif // RGBLIGHT_HUE_STEP
+
+#ifndef RGBLIGHT_LIMIT_VAL
+#    define RGBLIGHT_LIMIT_VAL 130
+#endif // RGBLIGHT_LIMIT_VAL
+
+#ifndef RGBLIGHT_SAT_STEP
+#    define RGBLIGHT_SAT_STEP 16
+#endif // RGBLIGHT_SAT_STEP
+
+#ifndef RGBLIGHT_SLEEP
+#    define RGBLIGHT_SLEEP
+#endif // RGBLIGHT_SLEEP
+
+#ifndef RGBLIGHT_SPLIT
+#    define RGBLIGHT_SPLIT
+#endif // RGBLIGHT_SPLIT
+
+#ifndef RGBLIGHT_VAL_STEP
+#    define RGBLIGHT_VAL_STEP 16
+#endif // RGBLIGHT_VAL_STEP
+
+#ifndef SPLIT_HAPTIC_ENABLE
+#    define SPLIT_HAPTIC_ENABLE
+#endif // SPLIT_HAPTIC_ENABLE
+
+#ifndef SPLIT_LAYER_STATE_ENABLE
+#    define SPLIT_LAYER_STATE_ENABLE
+#endif // SPLIT_LAYER_STATE_ENABLE
+
+#ifndef SPLIT_TRANSPORT_MIRROR
+#    define SPLIT_TRANSPORT_MIRROR
+#endif // SPLIT_TRANSPORT_MIRROR
+
+#ifndef SPLIT_MODS_ENABLE
+#    define SPLIT_MODS_ENABLE
+#endif // SPLIT_MODS_ENABLE
+
+#ifndef WS2812_DI_PIN
+#    define WS2812_DI_PIN GP25
+#endif // WS2812_DI_PIN
+
+#ifndef DEVICE_VER
+#    define DEVICE_VER 0x0200
+#endif // DEVICE_VER
+
+#ifndef MANUFACTURER
+#    define MANUFACTURER "sadekbaroudi"
+#endif // MANUFACTURER
+
+#ifndef PRODUCT
+#    define PRODUCT "ximi"
+#endif // PRODUCT
+
+#ifndef PRODUCT_ID
+#    define PRODUCT_ID 0xB171
+#endif // PRODUCT_ID
+
+#ifndef VENDOR_ID
+#    define VENDOR_ID 0xFEFE
+#endif // VENDOR_ID
+
+#ifndef MATRIX_COLS
+#    define MATRIX_COLS 8
+#endif // MATRIX_COLS
+
+#ifndef MATRIX_ROWS
+#    define MATRIX_ROWS 8
+#endif // MATRIX_ROWS
+
+#ifndef MATRIX_COL_PINS
+#    define MATRIX_COL_PINS { GP10, GP11, GP6, GP12, GP13, GP14, GP15, GP16 }
+#endif // MATRIX_COL_PINS
+
+#ifndef MATRIX_ROW_PINS
+#    define MATRIX_ROW_PINS { GP29, GP4, GP5, GP24 }
+#endif // MATRIX_ROW_PINS
+
+#ifndef ENCODER_A_PINS
+#    define ENCODER_A_PINS { GP17, GP19 }
+#endif // ENCODER_A_PINS
+
+#ifndef ENCODER_B_PINS
+#    define ENCODER_B_PINS { GP18, GP21 }
+#endif // ENCODER_B_PINS
+
+#ifndef ENCODER_RESOLUTION
+#    define ENCODER_RESOLUTION 4
+#endif // ENCODER_RESOLUTION
